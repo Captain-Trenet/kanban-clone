@@ -1,0 +1,137 @@
+@media (max-width: 750px) {
+  .left {
+    display: none !important;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  border-bottom: 1px solid #dbdbdb;
+  .left {
+  
+
+    display: flex;
+    align-items: center;
+    min-width: 295px;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 100%;
+    border-right: 1px solid #dbdbdb;
+    .logoContainer {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        margin-right: 10px;
+      }
+
+      .name {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #0d062d;
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .right {
+      flex-direction: column;
+      align-items: flex-start !important;
+      gap: 5px;
+    }
+  }
+  @media (max-width: 1200px) {
+    .inputBox {
+      width: 100% !important;
+    }
+  }
+  @media (max-width: 800px) {
+    .info {
+      display: none !important;
+    }
+  }
+  .right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+    // flex-wrap: wrap;
+
+    .inputBox {
+      width: 420px;
+      height: 45px;
+      background-color: #f5f5f5;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      padding: 0 18px;
+
+      .input {
+        border: none;
+        background-color: transparent;
+        height: 100%;
+        width: 100%;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #787486;
+        margin-left: 18px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+
+      .icons {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        margin-right: 60px;
+      }
+
+      .userinfo {
+        display: flex;
+        align-items: center;
+
+        .userDetails {
+          text-align: right;
+          margin-right: 20px;
+
+          .username {
+            font-weight: 400;
+            line-height: 19px;
+            color: #0d062d;
+          }
+
+          .address {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #787486;
+          }
+        }
+
+        .userImgContainer {
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+
+          .userImg {
+            border-radius: 50%;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
